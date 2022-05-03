@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:orientation="vertical"
+        android:background="?attr/background_color">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/userPost1"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_margin="4dp"
+                android:src="@mipmap/ic_launcher_round"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="17dp" />
+
+            <ImageView
+                android:id="@+id/userPost2"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_margin="4dp"
+                android:src="@mipmap/ic_launcher_round"
+                tools:layout_editor_absoluteX="164dp"
+                tools:layout_editor_absoluteY="17dp" />
+
+            <ImageView
+                android:id="@+id/userPost3"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_margin="4dp"
+                android:src="@mipmap/ic_launcher_round"
+                tools:layout_editor_absoluteX="292dp"
+                tools:layout_editor_absoluteY="17dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</layout>

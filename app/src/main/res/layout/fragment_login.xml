@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center|left"
+    tools:context=".view.LoginFragment">
+
+
+    <TextView
+        android:id="@+id/txttitleLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/mmrtext"
+        android:text="Login"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <EditText
+            android:id="@+id/edtTxtEmailLoginFragment"
+            android:layout_width="293dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/button_rectangle"
+            android:ems="10"
+            android:fontFamily="@font/mmrtext"
+            android:hint="Email or Username"
+            android:inputType="textPersonName"
+            android:paddingLeft="8dp" />
+
+        <EditText
+            android:id="@+id/edtTxtPassLoginFragment"
+            android:layout_width="293dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/button_rectangle"
+            android:ems="10"
+            android:fontFamily="@font/mmrtext"
+            android:hint="Password"
+            android:inputType="textPersonName"
+            android:paddingLeft="8dp"
+            />
+
+        <Button
+            android:id="@+id/buttonLogin"
+            android:layout_width="120dp"
+            android:layout_height="43dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/button_login_rectangle"
+            android:fontFamily="@font/mmrtext"
+            android:text="Login Now"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+
+</LinearLayout>

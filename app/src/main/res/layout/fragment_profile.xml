@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="?attr/background_color"
+    tools:context=".view.ProfileFragment">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/profileTxtUsername"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="username"
+                android:textStyle="bold"
+                android:padding="8dp"
+                android:gravity="center"
+                android:fontFamily="@font/mmrtext"
+                android:textColor="?attr/text_color"
+                android:textSize="16sp" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/profileTxtSettings"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Ayarlar"
+                android:padding="8dp"
+                android:gravity="center"
+                android:fontFamily="@font/mmrtext"
+                android:textColor="?attr/text_color"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/profileImageSettings"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="2dp"
+                android:src="@drawable/image_settings"
+                android:layout_marginRight="8dp"/>
+        </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="50dp">
+
+<de.hdodenhof.circleimageview.CircleImageView
+    android:id="@+id/profileCirclePhoto"
+    android:layout_width="120dp"
+    android:layout_height="120dp"
+    android:src="@drawable/pp"
+    android:layout_marginLeft="30dp"/>
+
+        <TextView
+            android:id="@+id/profileTxtName"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Name Surname"
+            android:padding="8dp"
+            android:gravity="center"
+            android:fontFamily="@font/mmrtext"
+            android:textColor="?attr/text_color"
+            android:textSize="19sp"
+            android:layout_marginLeft="30dp"/>
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/profileButtonGoEdit"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/button_profile"
+        android:text="Profili Düzenle"
+        android:textColor="?attr/text_color"
+        android:textAllCaps="false"
+        android:textSize="15sp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="30dp"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp">
+
+        <TextView
+            android:id="@+id/profileTxtToplamBegeniSayisi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="38dp"
+            android:layout_marginBottom="15dp"
+            android:text="1500"
+            android:textColor="?attr/text_color"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/profileTxtToplamBegeni"
+            app:layout_constraintEnd_toEndOf="@+id/profileTxtToplamBegeni" />
+
+        <TextView
+            android:id="@+id/profileTxtToplamBegeni"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="2dp"
+            android:text="Toplam Beğeni"
+            android:textColor="?attr/text_color"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/profileTxtAnket"
+            app:layout_constraintEnd_toStartOf="@+id/profileTxtAnket"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/profileTxtAnket" />
+
+        <TextView
+            android:id="@+id/profileTxtToplamAnketSayisi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="12dp"
+            android:layout_marginBottom="15dp"
+            android:text="24"
+            android:textColor="?attr/text_color"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/profileTxtAnket"
+            app:layout_constraintEnd_toEndOf="@+id/profileTxtAnket" />
+
+        <TextView
+            android:id="@+id/profileTxtAnket"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="7dp"
+            android:layout_marginBottom="49dp"
+            android:text="Anket"
+            android:textColor="?attr/text_color"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/profileTxtAnketPuan"
+            app:layout_constraintStart_toEndOf="@+id/profileTxtToplamBegeni" />
+
+        <TextView
+            android:id="@+id/profileTxtToplamAnketPuani"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="36dp"
+            android:layout_marginBottom="15dp"
+            android:text="30"
+            android:textColor="?attr/text_color"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/profileTxtAnketPuan"
+            app:layout_constraintEnd_toEndOf="@+id/profileTxtAnketPuan" />
+
+        <TextView
+            android:id="@+id/profileTxtAnketPuan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Anket Puanı"
+            android:textColor="?attr/text_color"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/profileTxtAnket"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/profileTxtAnket"
+            app:layout_constraintTop_toTopOf="@+id/profileTxtAnket" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/profileTxtAnketlerim"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Anketlerim"
+        android:textColor="?attr/text_color"
+        android:textSize="20sp"
+        android:gravity="center"/>
+    <View
+        android:layout_width="200dp"
+        android:layout_height="1dp"
+        android:background="#ffffff"
+        android:layout_gravity="center"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/profileRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

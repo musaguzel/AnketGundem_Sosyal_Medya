@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.RegisterFragment">
+
+
+    <TextView
+        android:id="@+id/txtRegisterTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Hesabını Oluştur"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:fontFamily="@font/mmrtext"/>
+
+    <EditText
+        android:id="@+id/edtTxtName"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="İsim"
+        android:paddingLeft="7dp"
+        android:layout_margin="8dp"
+        android:textColor="@color/black"
+        android:background="@drawable/button_rectangle"/>
+    <EditText
+        android:id="@+id/edtTxtUserName"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Kullanıcı Adı"
+        android:paddingLeft="7dp"
+        android:layout_margin="8dp"
+        android:textColor="@color/black"
+        android:background="@drawable/button_rectangle"/>
+    <EditText
+        android:id="@+id/edtTxtEmail"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:hint="E-posta"
+        android:paddingStart="7dp"
+        android:layout_margin="8dp"
+        android:textColor="@color/black"
+        android:background="@drawable/button_rectangle"/>
+
+    <EditText
+        android:id="@+id/edtTxtPass"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="Şifre"
+        android:paddingStart="7dp"
+        android:layout_margin="8dp"
+        android:textColor="@color/black"
+        android:background="@drawable/button_rectangle"/>
+    <EditText
+        android:id="@+id/edtTxtPass2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="Şifre Tekrar"
+        android:paddingStart="7dp"
+        android:layout_margin="8dp"
+        android:textColor="@color/black"
+        android:background="@drawable/button_rectangle"/>
+
+    <Button
+        android:id="@+id/buttonRegister"
+        android:layout_width="120dp"
+        android:layout_height="43dp"
+        android:text="Kayıt OL"
+        android:layout_gravity="right"
+        android:layout_marginRight="8dp"
+        android:textAllCaps="false"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_login_rectangle"/>
+
+</LinearLayout>

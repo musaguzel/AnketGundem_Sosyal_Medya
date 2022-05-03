@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "509146046718",
+    "project_id": "anketgundem-8553a",
+    "storage_bucket": "anketgundem-8553a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:509146046718:android:d50d2b09a9bff17e1c85af",
+        "android_client_info": {
+          "package_name": "com.musaguzel.anketgundem"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "509146046718-jlijnjo7iava2q1ibbt0r6hitc2qm7v7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyADVAurnLe8dRMKcFuluYLla-p00snIn4A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "509146046718-jlijnjo7iava2q1ibbt0r6hitc2qm7v7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

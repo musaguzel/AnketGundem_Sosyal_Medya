@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="645dp"
+        android:layout_marginBottom="8dp"
+        android:background="?attr/background_color"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.2"
+            android:orientation="horizontal"
+            android:layout_marginTop="2dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/pphoto"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/pp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="2dp"/>
+
+            <TextView
+                android:id="@+id/txtUserName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="username"
+                android:textColor="?attr/text_color"
+                android:layout_gravity="center"
+                android:layout_marginTop="1dp"
+                android:layout_marginLeft="5dp"/>
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+
+            <ImageView
+                android:id="@+id/imageUcNokta"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/ucnokta_image"
+                android:layout_gravity="center|right"
+                android:layout_marginRight="12dp"/>
+
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/recyclerImageView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:scaleType="fitXY"
+            android:src="@mipmap/ic_launcher_round"
+            android:layout_marginTop="3dp">
+        </ImageView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.2"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageHeart"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/heart"
+                android:scaleType="fitXY"
+                android:layout_gravity="center"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="4dp" />
+
+            <TextView
+                android:id="@+id/txtBegeniler"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="125 Kişi Bu anketi Beğendi"
+                android:textSize="12sp"
+                android:textColor="?attr/text_color"
+                android:layout_gravity="center"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="5dp"/>
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/txtTarih"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="26 Temmuz"
+                android:textSize="12sp"
+                android:textColor="?attr/text_color"
+                android:layout_gravity="center|right"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="4dp"/>
+
+        </LinearLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.7"
+            android:background="?attr/background_color"
+            android:layout_gravity="center">
+
+            <SeekBar
+                android:id="@+id/seek_bar1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:max="100"
+                android:progress="0"
+                android:progressDrawable="@drawable/progress_track_2"
+                android:thumb="@android:color/transparent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/firstCommentText"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="7dp"
+                android:gravity="center_vertical"
+                android:paddingStart="28dp"
+                android:paddingEnd="0dp"
+                android:text="Deneme Yorum1"
+                android:textColor="?attr/feed_text_color"
+                app:layout_constraintEnd_toStartOf="@+id/firstCommentPercent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/firstCommentPercent"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginTop="4dp"
+                android:gravity="center_vertical"
+                android:paddingStart="0dp"
+                android:paddingEnd="32dp"
+                android:text=""
+                android:textColor="#FF0000"
+                android:visibility="invisible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <SeekBar
+                android:id="@+id/seek_bar2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="100"
+                android:progress="0"
+                android:layout_marginTop="8dp"
+                android:thumb="@android:color/transparent"
+                android:progressDrawable="@drawable/progress_track_2"
+                app:layout_constraintTop_toBottomOf="@+id/seek_bar1"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <TextView
+                android:id="@+id/secondCommentText"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="8dp"
+                android:gravity="center_vertical"
+                android:paddingStart="28dp"
+                android:paddingEnd="0dp"
+                android:text="Deneme Yorum2"
+                android:textColor="?attr/feed_text_color"
+                app:layout_constraintEnd_toStartOf="@id/secondCommentPercent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/seek_bar1" />
+
+            <TextView
+                android:id="@+id/secondCommentPercent"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text=""
+                android:visibility="invisible"
+                android:textColor="#FF0000"
+                android:paddingStart="0dp"
+                android:paddingEnd="32dp"
+                android:layout_marginTop="6dp"
+                android:gravity="center_vertical"
+                app:layout_constraintTop_toBottomOf="@id/seek_bar1"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <SeekBar
+                android:id="@+id/seek_bar3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="100"
+                android:progress="0"
+                android:layout_marginTop="8dp"
+                android:thumb="@android:color/transparent"
+                android:progressDrawable="@drawable/progress_track_2"
+                app:layout_constraintTop_toBottomOf="@+id/seek_bar2"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <TextView
+                android:id="@+id/thirdCommentText"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="8dp"
+                android:gravity="center_vertical"
+                android:paddingStart="28dp"
+                android:paddingEnd="0dp"
+                android:text="Deneme Yorum3"
+                android:textColor="?attr/feed_text_color"
+                app:layout_constraintEnd_toStartOf="@+id/thirdCommentPercent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/seek_bar2" />
+
+            <TextView
+                android:id="@+id/thirdCommentPercent"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text=""
+                android:visibility="invisible"
+                android:textColor="#FF0000"
+                android:paddingStart="0dp"
+                android:paddingEnd="32dp"
+                android:layout_marginTop="6dp"
+                android:gravity="center_vertical"
+                app:layout_constraintTop_toBottomOf="@id/seek_bar2"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </LinearLayout>
+
+</layout>

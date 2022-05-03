@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loginbackground"
+    tools:context=".view.LoginActivity">
+
+
+    <TextView
+        android:id="@+id/txtGmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/mmrtext"
+        android:text="Also Login With"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageGmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtGmail"
+        app:srcCompat="@drawable/gmaillogo" />
+
+    <LinearLayout
+        android:id="@+id/loginLinearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="500dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.18">
+
+        <FrameLayout
+            android:id="@+id/frameLayoutLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/button_rectangle"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            android:padding="5dp"
+            tools:layout_editor_absoluteX="14dp"
+            tools:layout_editor_absoluteY="59dp">
+
+            <TextView
+                android:id="@+id/txtLogin"
+                android:layout_width="40dp"
+                android:layout_height="70dp"
+                android:layout_gravity="bottom|end"
+                android:fontFamily="@font/mmrtext"
+                android:gravity="center"
+                android:onClick="login"
+                android:rotation="90"
+                android:text="Login"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="20dp"
+                tools:layout_editor_absoluteY="609dp" />
+
+        </FrameLayout>
+
+
+        <FrameLayout
+            android:id="@+id/frameLayoutSignup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="15dp"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            android:padding="3dp"
+            tools:layout_editor_absoluteX="13dp"
+            tools:layout_editor_absoluteY="148dp">
+
+            <TextView
+                android:id="@+id/txtSignup"
+                android:layout_width="50dp"
+                android:layout_height="100dp"
+                android:layout_gravity="bottom|end"
+                android:fontFamily="@font/mmrtext"
+                android:gravity="center"
+                android:onClick="signup"
+                android:rotation="90"
+                android:text="Sign up"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+        </FrameLayout>
+
+
+        <FrameLayout
+            android:id="@+id/frameLayoutForgotPass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="15dp"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            android:padding="2dp"
+            tools:layout_editor_absoluteX="10dp"
+            tools:layout_editor_absoluteY="263dp">
+
+            <TextView
+                android:id="@+id/txtForgotPass"
+                android:layout_width="60dp"
+                android:layout_height="150dp"
+                android:layout_gravity="bottom|end"
+                android:fontFamily="@font/mmrtext"
+                android:gravity="center"
+                android:onClick="forgotpass"
+                android:rotation="90"
+                android:text="Forgot Password"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/replaceFrameLayout"
+        android:layout_width="315dp"
+        android:layout_height="390dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/loginLinearLayout"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.609">
+
+    </FrameLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

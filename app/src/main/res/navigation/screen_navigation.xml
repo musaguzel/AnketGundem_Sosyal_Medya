@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/screen_navigation"
+    app:startDestination="@id/anaSayfaFragment">
+
+    <fragment
+        android:id="@+id/anaSayfaFragment"
+        android:name="com.musaguzel.anketgundem.view.AnaSayfaFragment"
+        android:label="Anket Gündem"
+        tools:layout="@layout/fragment_ana_sayfa" >
+        <action
+            android:id="@+id/action_anaSayfaFragment_to_interestTagsFragment"
+            app:destination="@id/interestTagsFragment"
+            app:enterAnim="@anim/fadein"
+            app:popEnterAnim="@anim/fadein" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.musaguzel.anketgundem.view.ProfileFragment"
+        android:label="Anket Gündem"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_profileFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment"
+            app:enterAnim="@anim/enter_from_right"
+            app:popEnterAnim="@anim/fadein" />
+        <action
+            android:id="@+id/action_profileFragment_to_editProfileFragment"
+            app:destination="@id/editProfileFragment"
+            app:enterAnim="@anim/enter_from_right"
+            app:popEnterAnim="@anim/fadein" />
+    </fragment>
+    <fragment
+        android:id="@+id/uploadFragment"
+        android:name="com.musaguzel.anketgundem.view.UploadFragment"
+        android:label="Yeni Anket"
+        tools:layout="@layout/fragment_upload" />
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.musaguzel.anketgundem.view.SettingsFragment"
+        android:label="Settings" >
+        <action
+            android:id="@+id/action_settingsFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/editProfileFragment"
+        android:name="com.musaguzel.anketgundem.view.EditProfileFragment"
+        android:label="Profili Düzenle"
+        tools:layout="@layout/fragment_edit_profile" >
+        <action
+            android:id="@+id/action_editProfileFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/interestTagsFragment"
+        android:name="com.musaguzel.anketgundem.view.InterestTagsFragment"
+        android:label="İLgi Alanlarını Belirle"
+        tools:layout="@layout/fragment_interest_tags" >
+        <action
+            android:id="@+id/action_interestTagsFragment_to_anaSayfaFragment"
+            app:destination="@id/anaSayfaFragment" />
+    </fragment>
+</navigation>

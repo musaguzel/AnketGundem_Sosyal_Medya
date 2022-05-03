@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.UploadFragment">
+
+        <LinearLayout
+            android:id="@+id/uploadLinearTop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="15sp">
+
+            <ImageView
+                android:id="@+id/uploadPostImage"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                tools:src="@drawable/pp"/>
+
+            <TextView
+                android:id="@+id/uploadGoGalleryText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="50dp"
+                android:text="Fotoğraf Seç"
+                android:textColor="?attr/text_color"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+    <View
+        android:id="@+id/uploadLine"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#A1A1A1"
+        android:layout_gravity="center"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerviewUpload"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="12sp"/>
+
+
+
+        <LinearLayout
+            android:id="@+id/uploadLinearText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="15sp"
+            android:layout_marginLeft="15sp"
+            android:layout_marginRight="15sp">
+
+            <EditText
+                android:id="@+id/multiTxtFirst"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:textSize="16sp"
+                android:hint="1.Yorum"
+                android:paddingLeft="8dp"
+                android:gravity="start|top"
+                android:inputType="textMultiLine"
+                android:maxLength="97"
+                android:layout_marginTop="10dp"/>
+            <EditText
+                android:id="@+id/multiTxtSecond"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:textSize="16sp"
+                android:hint="2.Yorum"
+                android:paddingLeft="8dp"
+                android:gravity="start|top"
+                android:inputType="textMultiLine"
+                android:maxLength="97"
+                android:layout_marginTop="10dp"/>
+            <EditText
+                android:id="@+id/multiTxtThird"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:textSize="16sp"
+                android:hint="3.Yorum"
+                android:paddingLeft="8dp"
+                android:gravity="start|top"
+                android:inputType="textMultiLine"
+                android:maxLength="97"
+                android:layout_marginTop="10dp"/>
+
+        </LinearLayout>
+
+
+    <include
+        android:id="@+id/buttonYayinla"
+        layout="@layout/progress_btn_layout_upload"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="24dp"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/uploadConstraintLayout"
+        android:visibility="gone"
+        android:layout_width="340dp"
+        android:layout_height="122dp"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:id="@+id/circleUpload"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/ic_green_circle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/doneUpload"
+            android:layout_width="44dp"
+            android:layout_height="45dp"
+            android:src="@drawable/avd_done"
+            app:layout_constraintBottom_toBottomOf="@+id/circleUpload"
+            app:layout_constraintEnd_toEndOf="@+id/circleUpload"
+            app:layout_constraintStart_toStartOf="@+id/circleUpload"
+            app:layout_constraintTop_toTopOf="@+id/circleUpload" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Anketiniz Başarıyla Yayınlandı"
+            android:textSize="20sp"
+            android:textColor="?attr/text_color"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/circleUpload" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</LinearLayout>
