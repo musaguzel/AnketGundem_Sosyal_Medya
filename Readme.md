@@ -24,13 +24,13 @@
 | Sign In | Sign Up | Home |
 | ------ | ------ | ------- |
 |<img src="https://github.com/musaguzel/AnketGundem_Sosyal_Medya/blob/master/screenshots/signin.png" width="225" height="500"/>|<img src="https://github.com/musaguzel/AnketGundem_Sosyal_Medya/blob/master/screenshots/signup.png" width="225" height="500"/>
-src="https://github.com/musaguzel/AnketGundem_Sosyal_Medya/blob/master/screenshots/main.png" height="500"/>
+src="https://github.com/musaguzel/AnketGundem_Sosyal_Medya/blob/master/screenshots/main.png" height="500"/>|
 
 </br>
 
 | Home | Upload | Profile |
 | ------ | ---- | ------ |
-|<img src="https://github.com/musaguzel/AnketGundem_Sosyal_Medya/blob/master/screenshots/main_2.png" width="225" height="500"/>|<img src="https://github.com/musaguzel/AnketGundem_Sosyal_Medya/blob/master/screenshots/upload.png"/  width="225" height="500>|<img src="https://github.com/musaguzel/AnketGundem_Sosyal_Medya/blob/master/screenshots/profile.png" height="500"/>|
+|<img src="https://github.com/musaguzel/AnketGundem_Sosyal_Medya/blob/master/screenshots/main_2.png" width="225" height="500"/>|<img src="https://github.com/musaguzel/AnketGundem_Sosyal_Medya/blob/master/screenshots/upload.png"  width="225" height="500>|<img src="https://github.com/musaguzel/AnketGundem_Sosyal_Medya/blob/master/screenshots/profile.png" height="500"/>|
 
 </br>
 
