@@ -1,6 +1,10 @@
 <img src="https://github.com/musaguzel/AnketGundem_Sosyal_Medya/blob/master/screenshots/logo.png" align="left" width="100" height="100"/></br><div align="left|center">**Anket Gündem**</div>
 </br>
-
+<div align="left">Anket Gundem is an innovative social media platform developed with the Kotlin programming language. This application allows people to share their opinions about the issues that are on the agenda and increases interaction between users.</div>
+<br>
+<div align="left">Anket Gundem allows users to create surveys supported by images and share them with other users. Each submission is presented with a visual and three-option survey model. Users can view, vote and comment on other users' posts. Thanks to this, you can browse trending topics, explore popular surveys, and learn other users' opinions by creating your own posts.<br></div>
+<br>
+<div align="left">Anket Gundem creates an environment where people can express their thoughts freely and allows you to get information about the issues on the agenda.</div>
 </br>
 
  -
